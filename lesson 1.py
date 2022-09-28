@@ -21,6 +21,11 @@ print(9/2)
 a = 7
 print(a-2)
 
+a = '120'
+b = '16'
+print(a+b)
+
+
 
 a = 'abc'
 b = 'def'
@@ -33,3 +38,10 @@ print(a[0:9:3])
 
 
 a = '989 767'
+
+
+a = 120
+b = 16
+print(a+ b)
+
+
