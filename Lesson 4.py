@@ -10,8 +10,8 @@ elif meal == 'Обед' or 'Ужин':
 
 
 
-#time = int (input('Введите время(час): '))
-#price = int (input('Введите стоимость: '))
+time = int (input('Введите время(час): '))
+price = int (input('Введите стоимость: '))
 if time >=8 and time <= 22:
     if time >= 10 and time <= 12:
         price = price//2
@@ -19,6 +19,7 @@ if time >=8 and time <= 22:
         price = price//4
 else: print('Магазин закрыт')
 print('Вам нужно оплатить: ', price)
+
 
 a = int(input())
 b = int(input())
@@ -30,3 +31,5 @@ elif a > b and b > a:
     print('Акция', d // 3)
 else:
     print('К оплате:', d)
+
+
