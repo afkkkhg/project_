@@ -7,8 +7,8 @@ def task_1():
     print('Предпочтение учтено! ')
     print('Система рекомендаций настроена! ')
 
-
-task_1()
+#
+# task_1()
 
 
 def task_2():
@@ -44,16 +44,16 @@ def task_4():
         else:
             print('Спасибо за ваш отзыв! ')
 
-#
-# def task_5():
-#     while True:
-#         number = int(input('Введите целое число: ')
-#         if number == 0:
-#             break
-#         else:
-#             print('Число до скидки %d' % number)
-#             print('Число после скидки %d' % number * 0.5)
 
+def task_5():
+    while True:
+        number = int(input('Введите целое число: '))
+        if number == 0:
+            break
+        else:
+            print('Число до скидки %d', number)
+            print('Число после скидки %d', number * 0.5)
+task_5()
 
 
 
