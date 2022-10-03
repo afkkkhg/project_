@@ -1,5 +1,6 @@
 def task_1():
     dct = dict()
+    # создаем словарь и заполняем его числами от 1 до 10 в качестве ключей, а в качестве значений их квадраты
     for i in range(1, 11):
         dct[i] = i ** 2
     return dct
@@ -11,6 +12,7 @@ print(task_1())
 def task_2():
     dct = dict()
     numbers = "0139412831055230677798"
+    # создаем словарь в который сохраняем под ключом цифру , а под значением количество этой цифры в строке
     for i in range(1, 10):
         dct[i] = numbers.count(str(i))
     return dct
@@ -21,7 +23,9 @@ print(task_2())
 
 def task_3():
     dct = dict()
+    # создаем словарь
     while True:
+        # создаем бесконечный цикл если пользователь ввел off завершаем, иначе сохраняем его ввод и выводим в формате место певец и его имя 
         command = input('Введите задачу: ')
         place = input('Введите место: ')
         singer = input('Введите певца: ')
@@ -44,8 +48,11 @@ emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kiri
 
 
 def task_5(dct):
+    # идём по ключам и значения в словаре
     for key, value in dct.items():
+        #идем по списку значений в значенях
         for name in value:
+            # сохраняем и выводим домен и имя пользователя
             s = name + '@' + key
             print(s)
 
