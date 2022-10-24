@@ -1,5 +1,5 @@
 def main(input):
-    if 'распи' in input.lower():
+    if 'распи' in input.lower(): # обращемся к тайм функции
         timetable()
     if 'трени' in input.lower():
         socks()
@@ -21,8 +21,8 @@ def timetable():
         t2=input()
         print('Введите удобное время с 8:00 до 22:00')
         t3=int(input())
-        if 8<=t3<=23:
-            s1[t2]=t3
+        if 8<=t3<=22:
+            s1[t2]=t3 # т2 ключ словаря , а т3 значение
             print('Вы записались на', s1)
 def socks():
     print('Славной тренировки!')
